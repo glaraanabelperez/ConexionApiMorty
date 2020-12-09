@@ -1,0 +1,4 @@
+.contenedorListadoTitulos{
+    display: flex;
+    flex-direction: row;
+}
