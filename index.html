@@ -8,38 +8,34 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="styles.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <div class="form-group col-md-6">
-            <h1 class="display-4">Crear publicacion</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>  
-            <label >Busca tu imagen...</label>
+          <div class="form-group col-md-12">
+            <h1 class="display-4">The Rick and Morty </h1>
+            <br>
+            <p class="lead">No sabes que buscar? Te damos una idea...</p>  
+            <div class="estiloList lead" id="listaNombres"></div>
+            <br>
+            <label class="lead" >Ingresa el nombre completo</label>
             <input type="text" class="form-control" id="buscador"   placeholder="Buscar" >
             <br>
             <button type="button" class="btn btn-primary btn-lg" value="buscar" onClick="buscarImagenes()">Buscar</button>
           </div>
-          <div class=" col-md-9" class="erro" id="msj-error">
-          </div>
-
+          <div class=" col-md-9" class="erro" id="msj-error"></div>
           <br>
-        <div class="card" style="width: 38rem;" > 
-          <div class="col-md-12 lead" id="resultTitulo"></div>
-            <div class="contenedorListadoTitulos lead" id="listNom"></div>
-            <br><br>
-            <div class="badge bg-primary rounded-pill" id="imgBoton"></div>
-          <div class="col-md-6" id="listImagenes"></div>
-        </div>
+          <div class="card" style="width: 28rem;" > 
+            <div class="col-md-12" id="listImagenes"></div>
+          </div>
       </div>
         
     </div>
 
     <!-- SCRIPTS -->
   <script src="simpson.js"></script>
-  <!--<script src="jsCreatPub.js"></script>-->
 
    
 </body>

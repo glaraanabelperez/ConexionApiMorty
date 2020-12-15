@@ -1,4 +1,12 @@
-.contenedorListadoTitulos{
+.listaN{
+    list-style: none;
+}
+.estiloList{
+    background-color:whitesmoke;
+    padding:inherit;
+    padding-top: 10px;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
