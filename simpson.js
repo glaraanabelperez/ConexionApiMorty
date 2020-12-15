@@ -1,7 +1,7 @@
 let info;
 let cardFinal = '';
 const input=document.querySelector("#buscador");
-
+//prueba git
 fetch('https://rickandmortyapi.com/api/character')
   .then( response => {
     if(response.status == 200) {
